@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        div{
+            padding-top: 20px;
+            background-color: rgb(204, 203, 203);
+            border:3px black;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        #search{
+            margin-left:215px;
+            width:650px;
+        }
+        #results{
+           margin-left:220px;
+        }
+        #notetiles{
+            overflow:hidden;
+            border:3px rgb(21, 20, 20);
+            height:180px;
+            width: 200px;
+        }
+        h1{
+            margin-left: 50px;
+        }
+        p{
+            margin-left:20px;
+        }
+        #notes{
+            margin-top:10px;
+            margin-left:225px;
+            height:150px;
+            width:700px;
+            color:cornflowerblue;
+            background-color: black;
+        }
+        #textbox{
+            height:50px;
+            margin-left: 225px;
+            width:700px;
+            color:lightcoral;
+            background-color: black;
+        }
+        button{
+            margin-left:10px;
+            background-color: rgb(49, 116, 241);
+        border-radius: 4px;}
+        #submit{
+            margin-left: 225px;
+            background-color:rgb(249, 232, 6);
+            border-radius: 4px;
+        }
+    </style>
+    </head>
+    <body>
+<div>
+    <input type="text" id="search" placeholder="search">
+    <button id="SearchButton" onclick="searchbox()">Search</button>
+    <br/>
+    <div id ='results'></div>
+    <br/>
+            <input type="text" id="textbox" placeholder="title">
+<br/>
+            <textarea id="notes" placeholder="your note"></textarea>
+            <br/>
+            <button onclick="submitClear()" id ='submit'>Submit</button>
+            <h1>Your Notes</h1>
+            <hr>
+            <span id="empty"></span>
+            </div> 
+<table id="cards">
+</table><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type='text/javascript' SRC="notes4.js">
+        </script>
+    </body>
+</html>
